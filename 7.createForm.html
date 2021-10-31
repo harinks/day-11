@@ -1,0 +1,47 @@
+//7. Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit=foo() method="post">
+        <fieldset id="group1">
+            <h2 style="background-color: red; text-align: center; color: white;">Yes! I want to subscribe to  <strong>Mag-O-Zine</strong></h2>
+        <label for="first name">FirstName</label>
+        <input type="text" id="first name" name="" required> 
+        <label for="lastname">LastName</label>
+        <input type="text" id="lastname" name=""  required><br><br>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="" required><br><br>
+        <label for="city">City</label>
+        <input type="text" id="city" name="" required>
+        <label for="State">State</label>
+        <input type="text" id="State" name="" required>
+        <label for="zip">Zip</label>
+        <input type="text" id="zip" name="" required><br><br>
+        <label>Subscribe for:</label>
+        <input type="checkbox" id="1year" name="drone"checked>
+        <label for="1year">1 year ($19.95)</label>
+        <input type="checkbox" id="2year" name="drone">
+        <label for="2year">2 year ($35.00)</label><br><br>
+        <label>Send me more information About:</label><br>
+        <input type="checkbox" id="computer-zine" name="">
+        <label for="computer-zine">Computer-Zine</label><br>
+        <input type="checkbox" id="Fishing-zine" name="">
+        <label for="Fishing-zine">Fishing-Zine</label><br>
+        <input type="checkbox" id="Cat-O-Zine" name="">
+        <label for="Cat-O-Zine">Cat-O-Zine</label><br><br>
+        <button value="submit">Submit</button></fieldset>
+    </form>
+</body>
+<script>
+    function foo(){
+        alert("thank you");
+    }
+</script>
+</html>

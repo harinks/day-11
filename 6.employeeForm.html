@@ -1,0 +1,27 @@
+//6. In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit=foo() method="post">
+        <fieldset id="group1">
+            <h2>Select Employee type:</h2>
+        <input type="radio" id="group1" name="drone" value="salaried" checked>
+        <label for="group1">Salaried</label><br>
+        <input type="radio" id="group1" name="drone" value="own business">
+        <label for="group1">Own Business</label><br><br>
+        <button value="submit">Submit</button></fieldset>
+    </form>
+</body>
+<script>
+    function foo(){
+        alert("thank you");
+    }
+</script>
+</html>
